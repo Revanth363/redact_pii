@@ -161,6 +161,24 @@ From running `--experiment regex` against 107 ground truth entries:
 
 ---
 
+## Actual Results — Regex + GLiNER
+
+From running `--experiment regex+gliner2` against the same 107 ground-truth entries:
+
+| Label | TP | FP | FN | Precision | Recall | F1 |
+| --- | --- | --- | --- | --- | --- | --- |
+| ADDRESS | 0 | 8 | 6 | 0.000 | 0.000 | 0.000 |
+| COMPANY | 26 | 63 | 2 | 0.292 | 0.929 | 0.444 |
+| EMAIL | 26 | 2 | 0 | 0.929 | 1.000 | 0.963 |
+| PERSON | 24 | 46 | 3 | 0.343 | 0.889 | 0.495 |
+| PHONE | 20 | 5 | 0 | 0.800 | 1.000 | 0.889 |
+| --- | --- | --- | --- | --- | --- | --- |
+| OVERALL | 96 | 124 | 11 | 0.436 | 0.897 | 0.587 |
+
+> The Regex + GLiNER configuration significantly improves semantic PII detection compared with the regex-only baseline. It achieves **89.7% recall** and an **F1 score of 0.587**, indicating strong coverage of ground-truth PII entities. However, the system still produces **124 false positives**, resulting in a precision of **43.6%**. This shows that GLiNER is effective at identifying entities such as person and company names that regex cannot detect, but its predictions require further contextual filtering to reduce false positives.
+
+---
+
 ## What We Don't Redact (Intentional)
 
 | Item | Why we KEEP it |
