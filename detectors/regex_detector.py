@@ -91,7 +91,7 @@ class RegexDetector(BaseDetector):
                         raw_labels={"regex": {"label": label, "score": 1.0}},
                         detection_confidence=1.0,
                         context_confidence=0.5,
-                        agreement=True,
+                        agreement=False,
                     )
                     entities.append(entity)
 

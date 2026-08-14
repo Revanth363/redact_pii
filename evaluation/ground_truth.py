@@ -49,6 +49,15 @@ class GroundTruth:
     def __init__(self, entries: List[GroundTruthEntry]) -> None:
         self.entries = entries
 
+    @staticmethod
+    def _normalized_label(entry: dict) -> str:
+        label = entry.get("normalized_label")
+        if label is None:
+            label = entry.get("label")
+        if label is None:
+            raise KeyError("Ground-truth entry must include either 'normalized_label' or 'label'")
+        return label
+
     @classmethod
     def from_file(cls, path: str) -> "GroundTruth":
         with open(path, "r", encoding="utf-8") as f:
@@ -56,7 +65,7 @@ class GroundTruth:
         entries = [
             GroundTruthEntry(
                 text=d["text"],
-                normalized_label=d["normalized_label"],
+                normalized_label=cls._normalized_label(d),
                 block_id=d.get("block_id"),
                 start=d.get("start"),
                 end=d.get("end"),
@@ -72,7 +81,7 @@ class GroundTruth:
         entries = [
             GroundTruthEntry(
                 text=d["text"],
-                normalized_label=d["normalized_label"],
+                normalized_label=cls._normalized_label(d),
                 block_id=d.get("block_id"),
                 start=d.get("start"),
                 end=d.get("end"),

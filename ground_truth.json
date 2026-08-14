@@ -1,430 +1,430 @@
 [
   {
     "text": "Sarthak Malvadkar",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Kushal Subbayya Hegde",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Pushpa Kushal Hegde",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Rajesh Kushal Hegde",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Rohit Kushal Hegde",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Rakhi Girija Shetty",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Sandesh Bhagwat",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Amod Joshi",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Lokesh Shah",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Soumavo Sarkar",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Kishan Rastogi",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Abhijit Diwan",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Shanti Gopalkrishnan",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Lalit Muljibhai Sarvaiya",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Sangeeta Ramprasad Rai",
-    "normalized_label": "PERSON"
-  },
-  {
-    "text": "cs.connect@kshinternational.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "ksh.ipo@nuvama.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "ksh@icicisecurities.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "kshinternational.ipo@in.mpms.mufg.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "customerservice.mb@nuvama.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "customercare@icicisecurities.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "+ 91 20 45053237",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+ 91 20 4505 3237",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 4009 4400",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 6807 7100",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 81081 14949",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "KSH International Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Nuvama Wealth Management Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "ICICI Securities Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "MUFG Intime India Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Kirtane & Pandit LLP",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "CARE Analytics and Advisory Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park VI Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Motors Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Project Management Services Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Infra Park 5 Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Infra Park VI Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Distriparks Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Integrated Logistics Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Kushal Motors and Electricals Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park I Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park II Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park III Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park IV Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park V Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park VIII Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park IX Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park IX B Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Waterloo Industrial Park IX A Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "KSH Infra Park IV Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Bhandary Metal Extrusion Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "BSE Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "National Stock Exchange of India Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "Link Intime India Private Limited",
-    "normalized_label": "COMPANY"
-  },
-  {
-    "text": "11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501, Maharashtra, India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune – 411 045, Maharashtra, India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "ICICI Venture House, Appasaheb Marathe Marg, Prabhadevi, Mumbai 400025, Maharashtra, India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "Plot No. J-25, Taloja Industrial Area, Village Padghe, Taluka Panvel, Raigad – 410 208, Maharashtra, India",
-    "normalized_label": "ADDRESS"
-  },
-  {
-    "text": "Sarthak.malvadkar@kshinterantional.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "prakash.boricha@nuvama.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "sheetal.parab@nuvama.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "ipo@trilegal.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "siddharth.jadhav@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "sachin.gawade@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "eric.bacha@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "tushar.gavankar@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "pravin.teli2@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "Ipocmg@icicibank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "parag.pansare@kirtanepandit.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "hitesh.ramani@citi.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "pro@eximbankindia.in",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "sharmila.joshi@indusind.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "cherag.gyara@icicibank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "manisha.shukla@hdfcbank.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "rm6.ifbpune@sbi.co.in",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "ashishmp@federalbank.co.in",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "anand.soni@bajajfinserv.in",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "hingnetare@gmail.com",
-    "normalized_label": "EMAIL"
-  },
-  {
-    "text": "+91 22 40094400",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 4079 1000",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 30752929",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 30752928",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 22 30752914",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 20 6606 4494",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 20 2640 3100",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91-20-26234000",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 20 6769 4648",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 20 2561 8211",
-    "normalized_label": "PHONE"
-  },
-  {
-    "text": "+91 20 7157 6403",
-    "normalized_label": "PHONE"
+    "label": "PERSON"
   },
   {
     "text": "Prakash Boricha",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Sheetal Parab",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Parag Pansare",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Hitesh Ramani",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Siddharth Jadhav",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Sachin Gawade",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Eric Bacha",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Tushar Gavankar",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Cherag Gyara",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Manisha Shukla",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Sharmila Joshi",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
   },
   {
     "text": "Anand Soni",
-    "normalized_label": "PERSON"
+    "label": "PERSON"
+  },
+  {
+    "text": "cs.connect@kshinternational.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "ksh.ipo@nuvama.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "ksh@icicisecurities.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "kshinternational.ipo@in.mpms.mufg.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "customerservice.mb@nuvama.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "customercare@icicisecurities.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "Sarthak.malvadkar@kshinterantional.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "prakash.boricha@nuvama.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "sheetal.parab@nuvama.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "ipo@trilegal.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "siddharth.jadhav@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "sachin.gawade@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "eric.bacha@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "tushar.gavankar@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "pravin.teli2@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "Ipocmg@icicibank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "parag.pansare@kirtanepandit.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "hitesh.ramani@citi.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "pro@eximbankindia.in",
+    "label": "EMAIL"
+  },
+  {
+    "text": "sharmila.joshi@indusind.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "cherag.gyara@icicibank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "manisha.shukla@hdfcbank.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "rm6.ifbpune@sbi.co.in",
+    "label": "EMAIL"
+  },
+  {
+    "text": "ashishmp@federalbank.co.in",
+    "label": "EMAIL"
+  },
+  {
+    "text": "anand.soni@bajajfinserv.in",
+    "label": "EMAIL"
+  },
+  {
+    "text": "hingnetare@gmail.com",
+    "label": "EMAIL"
+  },
+  {
+    "text": "+ 91 20 45053237",
+    "label": "PHONE"
+  },
+  {
+    "text": "+ 91 20 4505 3237",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 4009 4400",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 6807 7100",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 81081 14949",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 40094400",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 4079 1000",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 30752929",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 30752928",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 22 30752914",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 20 6606 4494",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 20 2640 3100",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91-20-26234000",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 20 6769 4648",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 20 2561 8211",
+    "label": "PHONE"
+  },
+  {
+    "text": "+91 20 7157 6403",
+    "label": "PHONE"
   },
   {
     "text": "+ 91 8879770456",
-    "normalized_label": "PHONE"
+    "label": "PHONE"
   },
   {
     "text": "+ 91 91586 40360",
-    "normalized_label": "PHONE"
+    "label": "PHONE"
   },
   {
     "text": "+ 91 20 6729 5100",
-    "normalized_label": "PHONE"
+    "label": "PHONE"
   },
   {
     "text": "+ 91 22 4009 4400",
-    "normalized_label": "PHONE"
+    "label": "PHONE"
+  },
+  {
+    "text": "KSH International Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Nuvama Wealth Management Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "ICICI Securities Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "MUFG Intime India Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Kirtane & Pandit LLP",
+    "label": "COMPANY"
+  },
+  {
+    "text": "CARE Analytics and Advisory Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park VI Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Motors Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Project Management Services Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Infra Park 5 Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Infra Park VI Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Distriparks Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Integrated Logistics Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Kushal Motors and Electricals Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park I Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park II Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park III Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park IV Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park V Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park VIII Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park IX Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park IX B Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Waterloo Industrial Park IX A Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "KSH Infra Park IV Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Bhandary Metal Extrusion Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "BSE Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "National Stock Exchange of India Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "Link Intime India Private Limited",
+    "label": "COMPANY"
+  },
+  {
+    "text": "11/3, 11/4 and 11/5, Village Birdewadi, Chakan Taluka - Khed, Pune – 410 501, Maharashtra, India",
+    "label": "ADDRESS"
+  },
+  {
+    "text": "201, Tower 2, Montreal Business Centre, Off Pallod Farms, Baner, Pune – 411 045, Maharashtra, India",
+    "label": "ADDRESS"
+  },
+  {
+    "text": "801 - 804, Wing A, Building No 3, Inspire BKC, G Block, Bandra Kurla Complex, Bandra East, Mumbai 400051, Maharashtra, India",
+    "label": "ADDRESS"
+  },
+  {
+    "text": "ICICI Venture House, Appasaheb Marathe Marg, Prabhadevi, Mumbai 400025, Maharashtra, India",
+    "label": "ADDRESS"
+  },
+  {
+    "text": "C-101, Embassy 247, 1st Floor, L B S Marg, Vikhroli (West), Mumbai 400083, (Maharashtra), India",
+    "label": "ADDRESS"
+  },
+  {
+    "text": "Plot No. J-25, Taloja Industrial Area, Village Padghe, Taluka Panvel, Raigad – 410 208, Maharashtra, India",
+    "label": "ADDRESS"
   }
 ]

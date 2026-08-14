@@ -27,6 +27,27 @@ from entity import Entity
 
 logger = logging.getLogger(__name__)
 
+
+def looks_like_person_name(text: str) -> bool:
+    """A lightweight sanity check for obvious personal-name spans."""
+    words = [w.strip() for w in text.strip().split() if w.strip()]
+    if len(words) < 2 or len(words) > 5:
+        return False
+
+    cleaned = []
+    for word in words:
+        if not word:
+            continue
+        if word[0].isalpha() and not word[0].isupper():
+            return False
+        cleaned.append(word)
+
+    if len(cleaned) < 2:
+        return False
+
+    return all(word and word[0].isalpha() and word[0].isupper() for word in cleaned)
+
+
 # Common generic legal/document vocabulary terms that AI models often flag as PII,
 # but which are generic non-PII terms in a Red Herring Prospectus.
 GENERIC_EXCLUSIONS = {
@@ -51,6 +72,29 @@ GENERIC_EXCLUSIONS = {
     "regional director",
     "managing director",
     "executive director",
+    "we",
+    "our",
+    "us",
+    "you",
+    "they",
+    "them",
+    "customers",
+    "our customers",
+    "our business",
+    "business",
+    "bidder",
+    "anchor investor",
+    "anchor investors",
+    "investor",
+    "investors",
+    "shareholder",
+    "shareholders",
+    "promoter",
+    "promoters",
+    "registered office",
+    "registered offices",
+    "sponsor banks",
+    "banks",
 }
 
 
@@ -82,19 +126,88 @@ class Policy:
             return "KEEP"
 
         label = ent.normalized_label
-        conf  = ent.detection_confidence
+        conf = ent.detection_confidence
 
-        # 2. Hard rules for REDACT labels
+        # 2. Hard rules for KEEP labels
+        if label in KEEP_LABELS:
+            return "KEEP"
+
+        # 3. Strong automatic redaction for regex-backed high-confidence identifiers
+        if label in {"EMAIL", "PHONE"}:
+            if conf >= DETECTION_THRESHOLD or ent.sources == ["regex"]:
+                return "REDACT"
+            return "REVIEW"
+
+        # 4. Semantic labels need stronger evidence before redaction.
+        if label in {"PERSON", "COMPANY", "ADDRESS"}:
+
+            # Multiple independent detectors agreeing is strong evidence.
+            if ent.agreement:
+                return "REDACT"
+
+            # PERSON: require a plausible multi-word name and reasonably high confidence.
+            if label == "PERSON":
+                if looks_like_person_name(ent.text) and conf >= 0.80:
+                    return "REDACT"
+                return "REVIEW"
+
+            # COMPANY: company names often have strong corporate suffixes.
+            if label == "COMPANY":
+                company_indicators = (
+                    "limited",
+                    "private limited",
+                    "llp",
+                    "ltd",
+                    "inc.",
+                    "incorporated",
+                    "corporation",
+                    "bank",
+                    "securities",
+                    "industries",
+                    "infrastructure",
+                    "logistics",
+                    "services",
+                    "management",
+                )
+
+                if conf >= 0.80 and any(x in text_lower for x in company_indicators):
+                    return "REDACT"
+
+                return "REVIEW"
+
+            # ADDRESS: addresses usually contain structural/location indicators.
+            if label == "ADDRESS":
+                address_indicators = (
+                    "plot",
+                    "road",
+                    "street",
+                    "marg",
+                    "village",
+                    "taluka",
+                    "floor",
+                    "building",
+                    "wing",
+                    "tower",
+                    "industrial area",
+                    "complex",
+                    "pune",
+                    "mumbai",
+                    "maharashtra",
+                    "india",
+                )
+
+                if conf >= 0.75 and any(x in text_lower for x in address_indicators):
+                    return "REDACT"
+
+                return "REVIEW"
+
+        # 5. Other REDACT labels retain the usual thresholding.
         if label in REDACT_LABELS:
             if conf >= DETECTION_THRESHOLD or ent.sources == ["regex"]:
                 return "REDACT"
             return "REVIEW"
 
-        # 3. Hard rules for KEEP labels
-        if label in KEEP_LABELS:
-            return "KEEP"
-
-        # 4. Unknown or low-confidence single detector
+        # 6. Unknown or low-confidence single detector
         if not ent.agreement and conf < REVIEW_THRESHOLD:
             return "REVIEW"
 

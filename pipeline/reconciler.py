@@ -101,7 +101,9 @@ class Reconciler:
     def _fuse(cluster: List[Entity]) -> Entity:
         """Combine a cluster of overlapping same-label entities into one."""
         if len(cluster) == 1:
-            return cluster[0]
+            ent = cluster[0]
+            ent.agreement = False
+            return ent
 
         # Take the span with the widest coverage as the canonical span
         best = max(cluster, key=lambda e: e.detection_confidence)
