@@ -11,13 +11,10 @@ Decisions
 
 Policy rules (applied in order)
 --------------------------------
-1. If normalized_label is in REDACT_LABELS -> REDACT
-2. If normalized_label is in KEEP_LABELS   -> KEEP
-3. If agreement=False AND detection_confidence < REVIEW_THRESHOLD -> REVIEW
-4. Anything else (unknown label, high-confidence single detector)   -> REVIEW
-
-The policy is intentionally conservative: when in doubt, REVIEW rather
-than REDACT (avoids over-redaction) or KEEP (avoids missing real PII).
+1. If text is in GENERIC_EXCLUSIONS (e.g. generic words "Company", "Board", "Issuer") -> KEEP
+2. If normalized_label is in REDACT_LABELS -> REDACT
+3. If normalized_label is in KEEP_LABELS   -> KEEP
+4. Anything else                           -> REVIEW
 """
 
 from __future__ import annotations
@@ -29,6 +26,32 @@ from config import DETECTION_THRESHOLD, KEEP_LABELS, REDACT_LABELS, REVIEW_THRES
 from entity import Entity
 
 logger = logging.getLogger(__name__)
+
+# Common generic legal/document vocabulary terms that AI models often flag as PII,
+# but which are generic non-PII terms in a Red Herring Prospectus.
+GENERIC_EXCLUSIONS = {
+    "company",
+    "our company",
+    "the company",
+    "board",
+    "board of directors",
+    "directors",
+    "issuer",
+    "offer",
+    "registrar",
+    "maharashtra",
+    "india",
+    "pune",
+    "mumbai",
+    "equity shares",
+    "red herring prospectus",
+    "shareholders",
+    "promoter selling shareholders",
+    "bhabha",
+    "regional director",
+    "managing director",
+    "executive director",
+}
 
 
 class Policy:
@@ -52,23 +75,27 @@ class Policy:
     # ------------------------------------------------------------------
 
     def _decide(self, ent: Entity) -> str:
+        text_lower = ent.text.strip().lower()
+
+        # 1. Filter out generic dictionary words
+        if text_lower in GENERIC_EXCLUSIONS:
+            return "KEEP"
+
         label = ent.normalized_label
         conf  = ent.detection_confidence
 
-        # Hard rules first
+        # 2. Hard rules for REDACT labels
         if label in REDACT_LABELS:
-            # Even for REDACT labels, require minimum confidence unless
-            # the entity came from the deterministic regex layer (conf == 1.0).
-            if conf >= DETECTION_THRESHOLD:
+            if conf >= DETECTION_THRESHOLD or ent.sources == ["regex"]:
                 return "REDACT"
             return "REVIEW"
 
+        # 3. Hard rules for KEEP labels
         if label in KEEP_LABELS:
             return "KEEP"
 
-        # Unknown label — review if confidence is insufficient, else REDACT
+        # 4. Unknown or low-confidence single detector
         if not ent.agreement and conf < REVIEW_THRESHOLD:
             return "REVIEW"
 
-        # High-confidence, agreed-upon entity with an unmapped label
         return "REVIEW"

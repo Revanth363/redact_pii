@@ -20,7 +20,7 @@ KEEP_LABELS = {
 }
 
 # Minimum detection_confidence to consider an entity at all
-DETECTION_THRESHOLD = 0.45
+DETECTION_THRESHOLD = 0.65
 
 # If agreement=False and detection_confidence below this, mark as REVIEW
 REVIEW_THRESHOLD = 0.60
